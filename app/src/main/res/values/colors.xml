@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+
+    <color name="chineseBlack">#1a0f1a</color><!--background color-->
+    <color name="brightGray">#eaeaea</color><!-- button-->
+    <color name="red">#ff1a0d</color><!--like-->
+    <color name="graniteGray">#666869</color> <!--stroke color-->
+    <color name="darkLiver">#4f4f4f</color> <!--chips not selected color-->
+    <color name="Platinum">#E8E8E8</color> <!--chips selected color-->
+    <color name="outerSpace">#444444</color> <!--chips  selected text color-->
+    <color name="philippineGray">#909090</color> <!--chips not  selected text color-->
+    <color name="darkCharcoal">#313131</color> <!--bottom nav selected color-->
+    <color name="lotion">#fcfcfc</color> <!--bottom nav not selected color-->
+    <color name="electricRed">#e00704</color>
+    <color name="blue">#2196F3</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="orange">#FF7043</color>
+
+
+</resources>

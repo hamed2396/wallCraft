@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WallCraft" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:windowBackground">@color/chineseBlack</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+
+    </style>
+
+    <style name="RemoveDialogBackground" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@null</item>
+
+        <item name="android:windowSoftInputMode">adjustResize|stateVisible</item>
+    </style>
+    <style name="darkChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/item_chip_background</item>
+    </style>
+    <style name="grayChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/graniteGray</item>
+    </style>
+    <style name="edtSearch" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <item name="boxCornerRadiusTopStart">@dimen/_8mdp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/_8mdp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/_8mdp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/_8mdp</item>
+        <item name="android:textColorHint">@color/lotion</item>
+        <item name="hintTextColor">@color/lotion</item>
+
+    </style>
+
+    <style name="ColoredShadowLight">
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/orange</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/orange</item>
+    </style>
+
+
+    <style name="Theme.WallCraft" parent="Base.Theme.WallCraft" />
+</resources>

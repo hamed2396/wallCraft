@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">wallCraft</string>
+    <string name="binding">Binding  Can not Be Null</string>
+    <string name="splash_text">Explore 4k\n <font  size='60' color="red"><i>wallpapers\n</i></font>
+        <font  size='20'> Download,Search,Rotate\nAnd set as Wallpaper</font>
+         </string>
+    <string name="wallcraft">WallCraft</string>
+    <string name="search_photos">Search Photos</string>
+    <string name="retry">Retry</string>
+    <string name="categoryLoadFailed">Unable to load Category</string>
+    <string name="categoryPhotosLoadFailed">Unable to load Photos</string>
+    <string name="tryAgain">try Again</string>
+    <string name="SearchColor">Search Color</string>
+    <string name="black">black</string>
+    <string name="white">white</string>
+    <string name="yellow">yellow</string>
+    <string name="orange">orange</string>
+    <string name="red">red</string>
+    <string name="purple">purple</string>
+    <string name="magenta">magenta</string>
+    <string name="green">green</string>
+    <string name="teal">teal</string>
+    <string name="blue">blue</string>
+    <string name="brown">brown</string>
+    <string name="cyan">cyan</string>
+    <string name="colorBlueCode">#2196F3</string>
+    <string name="colorMagentaCode">#FF00FF</string>
+    <string name="colorBrownCode">#964B00</string>
+    <string name="colorCyanCode">#00FFFF</string>
+    <string name="colorBlackCode">#FF000000</string>
+    <string name="colorYellowCode">#FFEB3B</string>
+    <string name="colorRedCode">#e00704</string>
+    <string name="colorPurpleCode">#7E57C2</string>
+    <string name="colorGreenCode">#66BB6A</string>
+    <string name="colorOrangeCode">#FF7043</string>
+    <string name="colorTealCode">#008080</string>
+    <string name="colorWhiteCode">#FFFFFFFF</string>
+    <string name="downloads">downloads</string>
+    <string name="views">Views</string>
+    <string name="featured">Featured</string>
+    <string name="set_as">set as...?</string>
+    <string name="notSupportRotateView">rotate view is not supported</string>
+    <string name="initRotateView">please wait for image to load</string>
+    <string name="set_home_screen">Home Screen</string>
+    <string name="set_lock_screen">Lock Screen</string>
+    <string name="set_both">Set Both</string>
+    <string name="Latest">latest</string>
+    <string name="recipe_filter">Oldest</string>
+    <string name="popular">Popular</string>
+    <string name="oldest">Oldest</string>
+
+</resources>

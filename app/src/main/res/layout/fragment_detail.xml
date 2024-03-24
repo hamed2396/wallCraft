@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/loading"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/lotion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+
+    <ImageView
+        android:elevation="@dimen/_10mdp"
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_heart"
+        android:padding="@dimen/_12mdp"
+        android:layout_marginStart="@dimen/_10mdp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="@dimen/_30mdp"
+        app:tint="@color/lotion" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/coverImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/optionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20mdp"
+        android:layout_marginBottom="@dimen/_40mdp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/imgLike"
+            android:layout_width="@dimen/_34mdp"
+            android:layout_height="@dimen/_34mdp"
+            android:layout_marginTop="@dimen/_5mdp"
+            android:layout_marginEnd="@dimen/_40mdp"
+            android:background="@drawable/bg_heart"
+            android:padding="@dimen/_8mdp"
+            android:src="@drawable/heart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:elevation="@dimen/_10mdp"
+            android:id="@+id/imgInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_40mdp"
+            android:background="@drawable/bg_heart"
+            android:padding="@dimen/_8mdp"
+            android:src="@drawable/info"
+            app:layout_constraintEnd_toStartOf="@id/imgLike"
+            app:layout_constraintTop_toTopOf="@id/imgLike" />
+
+        <ImageView
+            android:id="@+id/imgDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginEnd="@dimen/_40mdp"
+
+            android:background="@drawable/bg_heart"
+            android:padding="@dimen/_8mdp"
+            android:src="@drawable/download"
+            app:layout_constraintEnd_toStartOf="@id/imgInfo"
+            app:layout_constraintTop_toTopOf="@id/imgInfo"
+            app:tint="@color/lotion" />
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/downloadLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mines3mdp"
+            android:visibility="gone"
+            app:indicatorColor="@color/cyan"
+            app:indicatorSize="@dimen/_34mdp"
+            android:layout_marginEnd="@dimen/_36mdp"
+            app:layout_constraintEnd_toStartOf="@id/imgInfo"
+            app:layout_constraintTop_toTopOf="@id/imgInfo"
+            app:trackColor="@android:color/transparent"
+            app:trackCornerRadius="@dimen/_5mdp"
+            app:trackThickness="@dimen/_2mdp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

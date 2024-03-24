@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/_15mdp"
+    android:layout_height="wrap_content">
+    <!--Loading-->
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/loadMoreProgress"
+        style="@style/SpinKitView.MultiplePulse"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/lotion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Retry-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loadMoreRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:insetTop="0dp"
+        android:layout_marginTop="@dimen/_2mdp"
+        android:fontFamily="@font/abeezee"
+        android:text="@string/tryAgain"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12font_mdp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/blue"
+        app:cornerRadius="@dimen/_7mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
