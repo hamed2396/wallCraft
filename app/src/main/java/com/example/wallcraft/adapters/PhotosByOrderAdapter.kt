@@ -6,7 +6,6 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wallcraft.data.models.explore.ResponsePhotosByOrder.ResponsePhotosByOrderItem
-import com.example.wallcraft.databinding.ItemPhotosBinding
 import com.example.wallcraft.databinding.ItemPhotosStaggeredBinding
 import com.example.wallcraft.utils.blurHash.BlurHashDecoder
 import com.example.wallcraft.utils.loadImageByBlurHash
@@ -35,7 +34,7 @@ class PhotosByOrderAdapter @Inject constructor() :
 
                 if (item.urls?.regular != null && item.blurHash != null) {
                 val blurHash = BlurHashDecoder.blurHashBitmap(binding.root.resources, item.blurHash)
-                imgCover.loadImageByBlurHash(item.urls.small!!, blurHash)
+                imgCover.loadImageByBlurHash(item.urls.regular, blurHash)
 
 
                 }

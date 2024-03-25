@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
 import com.example.wallcraft.data.models.home.ResponsePhotos.responsePhotosItem
 import com.example.wallcraft.databinding.ItemPhotosBinding
 import com.example.wallcraft.utils.blurHash.BlurHashDecoder
@@ -35,7 +34,7 @@ class PhotoAdapter @Inject constructor() :
 
                 if (item.urls?.regular != null && item.blurHash != null) {
                 val blurHash = BlurHashDecoder.blurHashBitmap(binding.root.resources, item.blurHash)
-                imgCover.loadImageByBlurHash(item.urls.small!!, blurHash)
+                imgCover.loadImageByBlurHash(item.urls.regular, blurHash)
 
 
                 }
